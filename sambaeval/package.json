@@ -1,0 +1,29 @@
+{
+  "name": "sambaeval",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/setup-venv.mjs && next dev -p 3001",
+    "build": "next build",
+    "start": "node scripts/setup-venv.mjs && next start -p 3001",
+    "setup-venv": "node scripts/setup-venv.mjs",
+    "lint": "eslint",
+    "type-check": "tsc --noEmit",
+    "test:examples": "node scripts/test_run_examples.mjs"
+  },
+  "dependencies": {
+    "next": "^16.2.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
